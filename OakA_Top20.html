@@ -1,77 +1,88 @@
 
-    <html>
-    <head>
-      <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Basic+Sans&display=swap" rel="stylesheet">
-      <style>
-        body {
-          background-image: url('https://images.unsplash.com/photo-1604147495798-57beb5d6af73?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGJyaWNrJTIwd2FsbHxlbnwwfHwwfHx8MA%3D%3D');
-          background-repeat: repeat;
-          background-size: auto;
-          color: #FFFFFF;
-          font-family: 'Basic Sans', sans-serif;
-        }
-        table {
-          width: 100%;
-          border-collapse: collapse;
-          font-size: 16px;
-        }
-        th {
-          color: #A11616;
-          font-size: 18px;
-          text-align: left;
-          padding-bottom: 12px;
-          padding-right: 20px;
-          border-bottom: 2px solid #A11616;
-        }
-        td {
-          padding: 10px 20px 10px 0;
-          border-bottom: 1px solid rgba(255,255,255,0.1);
-          line-height: 1.5;
-        }
-        .first-place {
-          background-color: #FFD700;
-          color: black;
-          font-size: 19px;
-          font-weight: bold;
-        }
-        .rank-number {
-          font-weight: bold;
-          font-family: 'Impact', 'Arial Black', sans-serif;
-          color: #FF3B3F;
-          text-shadow:
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000,
-            2px 2px 5px #FFD700;
-          letter-spacing: 1px;
-        }
-        .peak-position {
-          font-family: 'Punk Kid', cursive;
-          font-size: 18px;
-          color: #FFD700;
-          text-shadow:
-            1px 1px 0 #000,
-            2px 2px 3px rgba(0,0,0,0.6);
-        }
-        .new-badge {
-          background-color: #A11616;
-          color: #fff;
-          font-size: 10px;
-          padding: 2px 6px;
-          margin-left: 8px;
-          border-radius: 6px;
-          font-weight: bold;
-          display: inline-block;
-        }
-        a {
-          color: #FFFFFF;
-          text-decoration: underline;
-        }
-      </style>
-    </head>
-    <body>
+  <html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Basic+Sans&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-image: url('https://images.unsplash.com/photo-1604147495798-57beb5d6af73?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGJyaWNrJTIwd2FsbHxlbnwwfHwwfHx8MA%3D%3D');
+        background-repeat: repeat;
+        background-size: auto;
+        color: #FFFFFF;
+        font-family: 'Basic Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      .table-wrapper {
+        overflow-x: auto;
+        overflow-y: auto;
+        max-height: 100vh;
+        padding: 20px;
+      }
+      table {
+        min-width: 600px;
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 16px;
+      }
+      th {
+        color: #A11616;
+        font-size: 18px;
+        text-align: left;
+        padding: 12px 20px 12px 0;
+        border-bottom: 2px solid #A11616;
+      }
+      td {
+        padding: 10px 20px 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        line-height: 1.6;
+        white-space: nowrap;
+      }
+      .first-place {
+        background-color: #FFD700;
+        color: black;
+        font-size: 19px;
+        font-weight: bold;
+      }
+      .rank-number {
+        font-weight: bold;
+        font-family: 'Impact', 'Arial Black', sans-serif;
+        color: #FF3B3F;
+        text-shadow:
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000,
+          2px 2px 5px #FFD700;
+        letter-spacing: 1px;
+      }
+      .peak-position {
+        font-family: 'Punk Kid', cursive;
+        font-size: 22px;
+        color: #FFD700;
+        text-shadow:
+          1px 1px 0 #000,
+          2px 2px 3px rgba(0,0,0,0.6);
+      }
+      .new-badge {
+        background-color: #A11616;
+        color: #fff;
+        font-size: 10px;
+        padding: 2px 6px;
+        margin-left: 8px;
+        border-radius: 6px;
+        font-weight: bold;
+        display: inline-block;
+      }
+      a {
+        color: #FFFFFF;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table-wrapper">
       <table>
         <tr>
           <th>#</th>
@@ -80,7 +91,7 @@
           <th>Weeks</th>
           <th>Peak</th>
         </tr>
-  
+
       <tr class="first-place">
         <td class="rank-number">#1</td>
         <td>K4M</td>
@@ -109,7 +120,7 @@
         <td class="rank-number">#4</td>
         <td>LG Malique</td>
         <td><a href="https://www.youtube.com/watch?v=PfEhoIYHHPg" target="_blank">"Give It To God"</a> <span class="new-badge">NEW</span></td>
-        <td>2</td>
+        <td>-</td>
         <td class="peak-position">4</td>
       </tr>
     
