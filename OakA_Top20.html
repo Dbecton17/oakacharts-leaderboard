@@ -2,74 +2,74 @@
     <html>
     <head>
       <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Basic+Sans&display=swap" rel="stylesheet">
       <style>
-  body {
-    background-image: url('https://images.unsplash.com/photo-1604147495798-57beb5d6af73?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGJyaWNrJTIwd2FsbHxlbnwwfHwwfHx8MA%3D%3D');
-    background-repeat: repeat;
-    background-size: auto;
-    color: #FFFFFF;
-    font-family: 'Basic Sans', sans-serif;
-  }
-  @font-face {
-  font-family: 'PunkKid';
-  src: url('https://github.com/dhaynes2323/fonts/blob/main/PunkKid-Regular.ttf?raw=true') format('truetype');
-}
-
-.graffiti-peak {
-  font-family: 'PunkKid', sans-serif;
-  font-size: 20px;
-  color: #FFFFFF;
-  letter-spacing: 1px;
-}
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 16px;
-  }
-  th {
-    color: #A11616;
-    font-size: 18px;
-    text-align: left;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #A11616;
-  }
-  td {
-    padding: 6px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-  }
-  .first-place {
-    background-color: #FFD700;
-    color: black;
-    font-size: 19px;
-    font-weight: bold;
-  }
-  .rank-number {
-  font-weight: bold;
-  font-family: 'Impact', 'Arial Black', sans-serif;
-  font-size: 20px;
-  color: #FF3B3F;
-  text-shadow:
-    1px 1px 0 #000,
-    2px 2px 0 #000,
-    3px 3px 0 #000,
-    4px 4px 0 #000,
-    2px 2px 6px rgba(255, 0, 0, 0.6);
-}
-
-.rank-number.first {
-  color: #FFFFFF;
-  text-shadow:
-    1px 1px 0 #000,
-    2px 2px 0 #000,
-    3px 3px 0 #000,
-    4px 4px 0 #000,
-    2px 2px 6px rgba(255, 215, 0, 0.8);
-}
-  a {
-    color: #FFFFFF;
-    text-decoration: underline;
-  }
-</style>
+        body {
+          background-image: url('https://images.unsplash.com/photo-1604147495798-57beb5d6af73?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGJyaWNrJTIwd2FsbHxlbnwwfHwwfHx8MA%3D%3D');
+          background-repeat: repeat;
+          background-size: auto;
+          color: #FFFFFF;
+          font-family: 'Basic Sans', sans-serif;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          font-size: 16px;
+        }
+        th {
+          color: #A11616;
+          font-size: 18px;
+          text-align: left;
+          padding-bottom: 12px;
+          padding-right: 20px;
+          border-bottom: 2px solid #A11616;
+        }
+        td {
+          padding: 10px 20px 10px 0;
+          border-bottom: 1px solid rgba(255,255,255,0.1);
+          line-height: 1.5;
+        }
+        .first-place {
+          background-color: #FFD700;
+          color: black;
+          font-size: 19px;
+          font-weight: bold;
+        }
+        .rank-number {
+          font-weight: bold;
+          font-family: 'Impact', 'Arial Black', sans-serif;
+          color: #FF3B3F;
+          text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000,
+            2px 2px 5px #FFD700;
+          letter-spacing: 1px;
+        }
+        .peak-position {
+          font-family: 'Punk Kid', cursive;
+          font-size: 18px;
+          color: #FFD700;
+          text-shadow:
+            1px 1px 0 #000,
+            2px 2px 3px rgba(0,0,0,0.6);
+        }
+        .new-badge {
+          background-color: #A11616;
+          color: #fff;
+          font-size: 10px;
+          padding: 2px 6px;
+          margin-left: 8px;
+          border-radius: 6px;
+          font-weight: bold;
+          display: inline-block;
+        }
+        a {
+          color: #FFFFFF;
+          text-decoration: underline;
+        }
+      </style>
     </head>
     <body>
       <table>
@@ -77,88 +77,88 @@
           <th>#</th>
           <th>Artist</th>
           <th>Song Title</th>
-          <th>Weeks on Chart</th>
-          <th>Peak Position</th>
+          <th>Weeks</th>
+          <th>Peak</th>
         </tr>
   
       <tr class="first-place">
-        <td class="rank-number first">#1</td>
+        <td class="rank-number">#1</td>
         <td>K4M</td>
-        <td><a href="https://www.youtube.com/watch?v=8exih4wZJZA" target="_blank">Shimmy Flow</a></td>
+        <td><a href="https://www.youtube.com/watch?v=8exih4wZJZA" target="_blank">"Shimmy Flow"</a> <span class="new-badge">NEW</span></td>
         <td>-</td>
-        <td class="graffiti-peak">1</td>
+        <td class="peak-position">1</td>
       </tr>
     
       <tr class="">
-        <td class="rank-number ">#2</td>
+        <td class="rank-number">#2</td>
         <td>Marco Plus</td>
-        <td><a href="https://www.youtube.com/watch?v=RAF2Jrz7G-I" target="_blank">Omm</a></td>
+        <td><a href="https://www.youtube.com/watch?v=RAF2Jrz7G-I" target="_blank">"Omm"</a> <span class="new-badge">NEW</span></td>
         <td>-</td>
-        <td class="graffiti-peak">2</td>
+        <td class="peak-position">2</td>
       </tr>
     
       <tr class="">
-        <td class="rank-number ">#3</td>
+        <td class="rank-number">#3</td>
         <td>51 JUNE</td>
-        <td><a href="https://www.youtube.com/watch?v=9f6q5felsf0" target="_blank">Said It Best</a></td>
+        <td><a href="https://www.youtube.com/watch?v=9f6q5felsf0" target="_blank">"Said It Best"</a> <span class="new-badge">NEW</span></td>
         <td>-</td>
-        <td class="graffiti-peak">3</td>
+        <td class="peak-position">3</td>
       </tr>
     
       <tr class="">
-        <td class="rank-number ">#4</td>
-        <td>SAUCEMEUPGQ</td>
-        <td><a href="https://www.youtube.com/watch?v=VCrm75RYIus" target="_blank">HUSH</a></td>
-        <td>-</td>
-        <td class="graffiti-peak">4</td>
-      </tr>
-    
-      <tr class="">
-        <td class="rank-number ">#5</td>
-        <td>TooFat Troub</td>
-        <td><a href="https://www.youtube.com/watch?v=sj7QomEePQc" target="_blank">Jugg All Week</a></td>
-        <td>-</td>
-        <td class="graffiti-peak">5</td>
-      </tr>
-    
-      <tr class="">
-        <td class="rank-number ">#6</td>
+        <td class="rank-number">#4</td>
         <td>LG Malique</td>
-        <td><a href="https://www.youtube.com/watch?v=PfEhoIYHHPg" target="_blank">Give It To God</a></td>
-        <td>-</td>
-        <td class="graffiti-peak">7</td>
+        <td><a href="https://www.youtube.com/watch?v=PfEhoIYHHPg" target="_blank">"Give It To God"</a> <span class="new-badge">NEW</span></td>
+        <td>2</td>
+        <td class="peak-position">4</td>
       </tr>
     
       <tr class="">
-        <td class="rank-number ">#7</td>
+        <td class="rank-number">#5</td>
+        <td>SAUCEMEUPGQ</td>
+        <td><a href="https://www.youtube.com/watch?v=VCrm75RYIus" target="_blank">"HUSH"</a> <span class="new-badge">NEW</span></td>
+        <td>-</td>
+        <td class="peak-position">4</td>
+      </tr>
+    
+      <tr class="">
+        <td class="rank-number">#6</td>
+        <td>TooFat Troub</td>
+        <td><a href="https://www.youtube.com/watch?v=sj7QomEePQc" target="_blank">"Jugg All Week"</a> <span class="new-badge">NEW</span></td>
+        <td>-</td>
+        <td class="peak-position">5</td>
+      </tr>
+    
+      <tr class="">
+        <td class="rank-number">#7</td>
         <td>Moufpece Da Rippa, StateGangVince, King Kanevil</td>
-        <td><a href="https://www.youtube.com/watch?v=YHPo-MSWqwM" target="_blank">Trifecta</a></td>
+        <td><a href="https://www.youtube.com/watch?v=YHPo-MSWqwM" target="_blank">"Trifecta"</a> <span class="new-badge">NEW</span></td>
         <td>-</td>
-        <td class="graffiti-peak">6</td>
+        <td class="peak-position">6</td>
       </tr>
     
       <tr class="">
-        <td class="rank-number ">#8</td>
+        <td class="rank-number">#8</td>
         <td>Ots J Huncho</td>
-        <td><a href="https://www.youtube.com/watch?v=gNrLPrH9WM8" target="_blank">Him</a></td>
+        <td><a href="https://www.youtube.com/watch?v=gNrLPrH9WM8" target="_blank">"Him"</a> <span class="new-badge">NEW</span></td>
         <td>-</td>
-        <td class="graffiti-peak">8</td>
+        <td class="peak-position">8</td>
       </tr>
     
       <tr class="">
-        <td class="rank-number ">#9</td>
+        <td class="rank-number">#9</td>
         <td>DaProphet</td>
-        <td><a href="https://www.youtube.com/watch?v=_vGf8TjSGp0" target="_blank">Welcome to the LU</a></td>
+        <td><a href="https://www.youtube.com/watch?v=_vGf8TjSGp0" target="_blank">"Welcome to the LU"</a> <span class="new-badge">NEW</span></td>
         <td>-</td>
-        <td class="graffiti-peak">9</td>
+        <td class="peak-position">9</td>
       </tr>
     
       <tr class="">
-        <td class="rank-number ">#10</td>
+        <td class="rank-number">#10</td>
         <td>Jabee</td>
-        <td><a href="https://www.youtube.com/watch?v=niqTfuwx43M" target="_blank">No Love</a></td>
+        <td><a href="https://www.youtube.com/watch?v=niqTfuwx43M" target="_blank">"No Love"</a> <span class="new-badge">NEW</span></td>
         <td>-</td>
-        <td class="graffiti-peak">10</td>
+        <td class="peak-position">10</td>
       </tr>
     
       </table>
