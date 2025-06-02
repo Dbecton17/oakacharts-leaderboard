@@ -12,19 +12,26 @@
   color: #ffffff;
   overflow-y: visible;  /* Allow Carrd to handle vertical scroll */
   overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100vw;
 }
 
 .table-wrapper {
   overflow-x: auto;    /* Allow horizontal scroll */
   overflow-y: visible; /* Disable vertical scroll on the table */
   max-height: none;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  box-sizing: border-box;
 }
       table {
         min-width: 100%;
         width: 100%;
         border-collapse: collapse;
         font-size: 16px;
+        margin: 0;
+        padding: 0;
       }
       th {
         color: #A11616;
