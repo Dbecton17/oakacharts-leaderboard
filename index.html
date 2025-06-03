@@ -22,82 +22,82 @@
   margin: 0;
   width: 100%;
 }
-      table {
-        min-width: 1000px;
-        width: max-content;
-        border-collapse: collapse;
-        font-size: 16px;
-        margin: 0;
-        padding: 0;
-      }
-      th {
-        color: #A11616;
-        font-size: 18px;
-        text-align: left;
-        padding: 12px 20px 12px 0;
-        border-bottom: 2px solid #A11616;
-      }
-      td {
-        padding: 10px 20px 10px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-        line-height: 1.6;
-        vertical-align: top;
-        word-wrap: break-word;
-        white-space: normal;
-      }
-      .artist-cell, .song-cell {
-        max-width: 160px;
-        word-break: break-word;
-        white-space: normal;
-      }
-      .first-place {
-        background-color: #FFD700;
-        color: white;
-        font-size: 19px;
-        font-weight: bold;
-      }
-      .rank-number {
-        font-weight: bold;
-        font-family: 'Impact', 'Arial Black', sans-serif;
-        color: #FF3B3F;
-        text-shadow:
-          -1px -1px 0 #000,
-          1px -1px 0 #000,
-          -1px 1px 0 #000,
-          1px 1px 0 #000,
-          2px 2px 5px #FFD700;
-        letter-spacing: 1px;
-      }
-      .peak-position {
-        font-family: 'Punk Kid', cursive;
-        font-size: 22px;
-        color: #FFFFFF;
-        text-shadow:
-          1px 1px 0 #000,
-          2px 2px 3px rgba(0,0,0,0.6);
-      }
-      .new-badge {
-        background-color: #A11616;
-        color: #white;
-        font-size: 10px;
-        padding: 2px 6px;
-        margin-left: 8px;
-        border-radius: 6px;
-        font-weight: bold;
-        display: inline-block;
-      }
-      a {
-        color: #FFFFFF;
-        text-decoration: underline;
-      }
+table {
+  min-width: 1000px;
+  width: max-content;
+  border-collapse: collapse;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+th {
+  color: #A11616;
+  font-size: 18px;
+  text-align: left;
+  padding: 12px 20px 12px 0;
+  border-bottom: 2px solid #A11616;
+}
+td {
+  padding: 10px 20px 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  line-height: 1.6;
+  vertical-align: top;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.artist-cell, .song-cell {
+  max-width: 160px;
+  word-break: break-word;
+  white-space: normal;
+}
+.first-place {
+  background-color: #FFD700;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+}
+.rank-number {
+  font-weight: bold;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  color: #FF3B3F;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    2px 2px 5px #FFD700;
+  letter-spacing: 1px;
+}
+.peak-position {
+  font-family: 'Punk Kid', cursive;
+  font-size: 22px;
+  color: #FFFFFF;
+  text-shadow:
+    1px 1px 0 #000,
+    2px 2px 3px rgba(0,0,0,0.6);
+}
+.new-badge {
+  background-color: #A11616;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  margin-left: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+}
+a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
 body, html {
   padding: 0 !important;
   margin: 0 !important;
   width: 100% !important;
   max-width: 100% !important;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
-
 body > * {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -106,8 +106,9 @@ body > * {
   box-sizing: border-box;
   width: 100% !important;
   max-width: 100% !important;
+  display: block;
 }
-    </style>
+</style>
   </head>
   <body>
   <h1 style="font-family: 'Rubik Mono One', sans-serif; color: #A11616; font-size: 36px; text-align: center; margin: 30px 0 10px 0;">
