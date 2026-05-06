@@ -317,12 +317,16 @@
     </table>
   </div>
 
-  <script>
+ <script>
     function sendHeight() {
-      window.parent.postMessage({ frameHeight: document.body.scrollHeight + 40 }, '*');
+      window.parent.postMessage({ frameHeight: document.body.scrollHeight + 10 }, '*');
     }
     window.addEventListener('load', sendHeight);
     window.addEventListener('resize', sendHeight);
+    // Respond to ping from parent
+    window.addEventListener('message', function(e) {
+      if (e.data === 'getHeight') sendHeight();
+    });
   </script>
 
 </body>
